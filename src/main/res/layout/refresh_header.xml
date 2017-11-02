@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--下拉刷新控件-->
+    <LinearLayout
+        android:id="@+id/ll_pull_down_refresh"
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_gravity="center"
+            android:layout_width="80dp"
+            android:layout_height="80dp">
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/iv_arrow"
+                android:src="@drawable/common_listview_headview_red_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:scaleType="fitXY" />
+            <ProgressBar
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:id="@+id/pb_status"
+                android:indeterminateDrawable="@drawable/castom_progressbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:gravity="center_horizontal"
+                android:id="@+id/tv_status"
+                android:text="下拉刷新菜单"
+                android:textColor="#ff0000"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:id="@+id/tv_time"
+                android:text="上次更新时间:2016-8-23"
+                android:textColor="#55000000"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--顶部轮播图部分-->
+
+</LinearLayout>
